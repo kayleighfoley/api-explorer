@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/api-explorer/static/css/main.1ef77eee.chunk.css",
+    "main.js": "/api-explorer/static/js/main.5319bfc6.chunk.js",
+    "main.js.map": "/api-explorer/static/js/main.5319bfc6.chunk.js.map",
+    "runtime-main.js": "/api-explorer/static/js/runtime-main.dcb88544.js",
+    "runtime-main.js.map": "/api-explorer/static/js/runtime-main.dcb88544.js.map",
+    "static/js/2.611a63a6.chunk.js": "/api-explorer/static/js/2.611a63a6.chunk.js",
+    "static/js/2.611a63a6.chunk.js.map": "/api-explorer/static/js/2.611a63a6.chunk.js.map",
+    "index.html": "/api-explorer/index.html",
+    "precache-manifest.f59135bb1345c8ef22d2919fa91656d2.js": "/api-explorer/precache-manifest.f59135bb1345c8ef22d2919fa91656d2.js",
+    "service-worker.js": "/api-explorer/service-worker.js",
+    "static/css/main.1ef77eee.chunk.css.map": "/api-explorer/static/css/main.1ef77eee.chunk.css.map",
+    "static/js/2.611a63a6.chunk.js.LICENSE.txt": "/api-explorer/static/js/2.611a63a6.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/api-explorer/static/media/chevron.929f649a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dcb88544.js",
+    "static/js/2.611a63a6.chunk.js",
+    "static/css/main.1ef77eee.chunk.css",
+    "static/js/main.5319bfc6.chunk.js"
+  ]
+}
