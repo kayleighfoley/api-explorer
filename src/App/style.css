@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+
+:root {
+  --primary-100: #00819d;
+  --primary-200: #005668;
+  --neutral-100: #070a2c;
+  --neutral-200: rgba(7, 10, 44, 0.7);
+  --neutral-300: #dddddd;
+  --neutral-400: #f2f5fa;
+  --neutral-500: #ffffff;
+
+  --primary-font: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: "Roboto Mono", monospace;
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--neutral-200);
+  line-height: 25px;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 2rem;
+  max-width: 900px;
+  margin: 1em auto;
+}
+
+button {
+  font-family: var(--body-font);
+  background-color: var(--primary-100);
+  border: 1px solid var(--primary-100);
+  color: var(--neutral-500);
+  transition: background-color 0.25s ease, border 0.25s ease;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover {
+  background-color: var(--primary-200);
+  border: 1px solid var(--primary-200);
+}
+
+button.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--primary-100);
+  color: var(--primary-100);
+}
+
+button.btn-secondary:hover {
+  border: 1px solid var(--primary-200);
+  color: var(--primary-200);
+}
+
+input {
+  font-family: var(--body-font);
+  width: 100%;
+  font-size: 1rem;
+}
+
+input.invalid {
+  border: 1px solid red;
+  animation: invalidInput 0.25s;
+}
+
+code,
+pre {
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+@keyframes invalidInput {
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+
+  code,
+  pre {
+    font-size: 0.8rem;
+  }
+}
