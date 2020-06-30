@@ -1,5 +1,5 @@
 import React, { useState, useReducer, useRef } from "react";
-import ApiExplorerInput from "../ApiExplorerInput";
+import ExplorerInput from "../ExplorerInput";
 import "./style.css";
 
 export default function ExplorerComponent({ title, url, method, body }) {
@@ -115,7 +115,7 @@ export default function ExplorerComponent({ title, url, method, body }) {
               <div className="explorer__request-param-value">
                 {body.map((obj, index) => {
                   return (
-                    <ApiExplorerInput
+                    <ExplorerInput
                       key={index}
                       inputObj={obj}
                       onChange={handleInputChange}

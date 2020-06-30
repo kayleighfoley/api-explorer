@@ -1,5 +1,5 @@
 import React from "react";
-import ExplorerComponent from "../ApiExplorer";
+import ExplorerComponent from "../Explorer";
 import "./style.css";
 
 function App() {
@@ -35,34 +35,6 @@ function App() {
         url="https://jsonplaceholder.typicode.com/users"
         method="GET"
       />
-      {/* <ExplorerComponent
-        title="Get all posts"
-        url="https://jsonplaceholder.typicode.com/posts"
-        method="GET"
-      />
-      <ExplorerComponent
-        title="Create a post"
-        url="https://jsonplaceholder.typicode.com/posts"
-        method="POST"
-        body={[
-          {
-            name: "post-id",
-            type: "number",
-            maxlength: 3,
-          },
-          {
-            name: "title",
-            type: "text",
-            required: true,
-            maxlength: 255,
-          },
-          {
-            name: "body",
-            type: "text",
-            required: true,
-          },
-        ]}
-      /> */}
     </div>
   );
 }

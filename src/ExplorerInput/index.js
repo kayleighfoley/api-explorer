@@ -3,7 +3,7 @@ import React from "react";
 import { reactAttributeMap } from "../helpers/reactAttributes";
 import "./style.css";
 
-export default function ApiExplorerInput({ inputObj, onChange, value }) {
+export default function ExplorerInput({ inputObj, onChange, value }) {
   // converts any input attributes from lowercase to camelCase for React props
   function convertInputAttributes(obj) {
     const newObj = {};
