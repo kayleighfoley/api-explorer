@@ -1,4 +1,4 @@
-![API Explorer screenshot](https://github.com/kayleighfoley/api-explorer/blob/master/api-explorer.jpg?raw=true)
+![API Explorer screenshot](https://github.com/kayleighfoley/api-explorer/blob/master/api-explorer.png?raw=true)
 
 # API Explorer
 
