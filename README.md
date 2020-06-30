@@ -1,3 +1,5 @@
+![API Explorer screenshot](https://github.com/kayleighfoley/api-explorer/blob/master/api-explorer.jpg?raw=true)
+
 # API Explorer
 
 Use the API Explorer to test and explore various API endpoints. An individual API Explorer component requires a `title`, `url` and `method` property (`GET`, `POST`, `PUT`, `DELETE`), and an optional `body` property for `POST` and `PUT` requests.
