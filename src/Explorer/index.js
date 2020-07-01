@@ -1,3 +1,4 @@
+import "whatwg-fetch"; // polyfill for internet explorer
 import React, { useState, useReducer, useRef } from "react";
 import ExplorerInput from "../ExplorerInput";
 import "./style.css";
@@ -49,20 +50,20 @@ export default function ExplorerComponent({ title, url, method, body }) {
   function submitRequest(event) {
     event.preventDefault();
 
+    const headers = new Headers({
+      "Content-Type": "application/json",
+    });
+
     const options =
       method === "POST" || method === "PUT"
         ? {
             method,
-            headers: {
-              "Content-Type": "application/json",
-            },
+            headers,
             body: JSON.stringify(formInputs),
           }
         : {
             method,
-            headers: {
-              "Content-Type": "application/json",
-            },
+            headers,
           };
 
     fetch(url, options)
