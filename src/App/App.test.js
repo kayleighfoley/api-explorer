@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "@testing-library/react";
 import App from "./";
 
-test("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<App />, div);
+test("renders the app", () => {
+  const { getByText } = render(<App />);
+  expect(getByText("API Explorer")).toBeInTheDocument();
 });
